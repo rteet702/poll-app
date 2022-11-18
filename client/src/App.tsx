@@ -3,7 +3,7 @@ import { Home } from "./views/Home";
 
 function App() {
     return (
-        <div className="h-screen w-screen flex items-center justify-center">
+        <div className="h-screen w-screen">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />

@@ -14,6 +14,7 @@ export const PollForm = (props: any) => {
         } else {
             setPages([props.children]);
         }
+        // eslint-disable-next-line
     }, []);
 
     const submitHandler: FormEventHandler = (
@@ -25,10 +26,9 @@ export const PollForm = (props: any) => {
 
     return (
         <form
-            className="flex-[3] flex flex-col items-center justify-between border-2 p-4 bg-orange-50 rounded-lg shadow-xl"
+            className="flex flex-col items-center justify-between card gap-5"
             onSubmit={submitHandler}
         >
-            <p>{currPage}</p>
             {pages[currPage]}
             <div className="flex justify-end items-center w-full gap-5">
                 {currPage > 0 ? (

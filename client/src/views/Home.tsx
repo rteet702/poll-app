@@ -6,10 +6,9 @@ import { PollForm } from "../components/PollForm/PollForm";
 
 export const Home = () => {
     return (
-        <div className="container bg-neutral-100 p-10 rounded-lg shadow-lg flex">
-            <div className="flex-[2]">
-                <h1 className="text-4xl">Start a poll for any reason.</h1>
-                <p>Ask away.</p>
+        <div className="container-custom">
+            <div className="card mb-5">
+                <h1 className="text-4xl">Pollgram</h1>
             </div>
             <PollForm>
                 <FirstPage />

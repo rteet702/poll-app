@@ -1,8 +1,22 @@
 @tailwind base;
 @tailwind components;
+
+.container-custom {
+    @apply container bg-neutral-200 bg-opacity-25 backdrop-blur-lg shadow-lg overflow-y-scroll overflow-x-hidden h-screen mx-auto;
+}
+
+.card {
+    @apply p-10 bg-neutral-800 shadow-md;
+}
+
 @tailwind utilities;
 
 html,
 body {
-    @apply bg-gradient-to-b from-orange-500 to-yellow-300 h-screen bg-fixed;
+    @apply bg-gradient-to-br from-neutral-700 to-neutral-800 h-screen bg-fixed;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
